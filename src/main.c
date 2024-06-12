@@ -5,6 +5,8 @@
 ** src/main.c
 */
 
+#include "myteams.h"
+
 int main(void)
 {
     return 0;

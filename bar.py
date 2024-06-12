@@ -47,5 +47,4 @@ def main():
 
 if __name__ == "__main__":
   main()
-  #print("\033[A\033[A                                                                                                                                                                                           ")
 

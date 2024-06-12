@@ -8,8 +8,11 @@
 BUILD_DIR	:= build
 BASE		:= src
 
-SRC 	:= $(addprefix $(BASE)/, $(addsuffix .c,			\
+SRC 	:= $(addsuffix .c, $(addprefix $(BASE)/,			\
 				main                                        \
+				$(addprefix helper/,						\
+					get_from_file							\
+				)											\
 			))
 
 OBJ       := $(patsubst $(BASE)/%.c, $(BUILD_DIR)/%.o, $(SRC))
